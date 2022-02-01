@@ -20,7 +20,7 @@ var store = new Vue ({
     },
     created: function() {
         console.log('requesting all Lessons from server')
-            fetch('http://localhost:3000/collection/Lessons/').then(
+            fetch('https://courseworktwo2.herokuapp.com/collection/Lessons/').then(
                 function(response) {
                     response.json().then(
                         function(json){
@@ -32,7 +32,7 @@ var store = new Vue ({
             )
 
             console.log('requesting all Users from server')
-            fetch('http://localhost:3000/collection/Users/').then(
+            fetch('https://courseworktwo2.herokuapp.com/collection/Users/').then(
                 function(response) {
                     response.json().then(
                         function(json){
@@ -43,7 +43,7 @@ var store = new Vue ({
                 }
             )
             console.log('requesting all Users from server')
-            fetch('http://localhost:3000/collection/Users/61f87042169dc2d90e149a25').then(
+            fetch('https://courseworktwo2.herokuapp.com/collection/Users/61f87042169dc2d90e149a25').then(
                 function(response) {
                     response.json().then(
                         function(json){
@@ -103,7 +103,7 @@ var store = new Vue ({
             if(num.value.match(integers) && lett.value.match(letters)){                     
                 if( this.checkout.Name != '' && this.checkout.Phone_No != null){
                     if(this.checkout.Name === this.currentUserId.Name){
-                        fetch('http://localhost:3000/collection/Users/' + this.currentUserId._id , {
+                        fetch('https://courseworktwo2.herokuapp.com/collection/Users/' + this.currentUserId._id , {
                             method: 'PUT',
                             body: JSON.stringify(this.checkout),
                             headers: {'Content-Type': 'application/json' }
@@ -113,7 +113,7 @@ var store = new Vue ({
                     }
                     else{    
                         console.log("posting")                
-                        fetch('http://localhost:3000/collection/Users', {
+                        fetch('https://courseworktwo2.herokuapp.com/collection/Users', {
                             method: 'POST',
                             headers: {'Content-Type': 'application/json' },
                             body: JSON.stringify(this.checkout)
