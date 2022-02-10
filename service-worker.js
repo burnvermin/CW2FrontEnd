@@ -2,8 +2,8 @@ var cacheName = "Lessons";
 var cacheFiles = [
     'index.html',
     'lessons.webmanifest',
-    'images/Maths.png',
-    'images/Hunt.jpg',
+    'images//Maths.png',
+ /*    'images/Hunt.jpg',
     'images/Ms.png',
     'images/UX.jpeg',
     'images/WD.png',
@@ -12,8 +12,8 @@ var cacheFiles = [
     'images/EE.png',
     'images/RS.jpg',
     'images/MS.png',
-    'images/maf.jpg', 
-    'images/icon-store-512.png'
+    'images/maf.jpg',  */
+    'images//icon-store-512.png'
 ];
 
 self.addEventListener('install', (e) => {
