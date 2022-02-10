@@ -1,18 +1,18 @@
-var cacheName = "petstore-v1";
+var cacheName = "Lessons";
 var cacheFiles = [
     'index.html',
-    'petstore.webmanifest',
+    'lessons.webmanifest',
     'images/Maths.png',
     'images/Hunt.jpg',
-    'images/Ms.jpg',
-    'images/UX.jpg',
-    'images/WD.jpg',
+    'images/Ms.png',
+    'images/UX.jpeg',
+    'images/WD.png',
     'images/ENG.jpg',
     'images/Py.jpg',
-    'images/EE.jpg',
+    'images/EE.png',
     'images/RS.jpg',
-    'images/MS.jpg',
-    'images/maf.jpg',
+    'images/MS.png',
+    'images/maf.jpg', 
     'images/icon-store-512.png'
 ];
 
